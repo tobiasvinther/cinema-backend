@@ -1,4 +1,4 @@
-package kea.exam.dtos;
+package kea.cinema.dtos;
 
 public class ExampleRequest {
 }

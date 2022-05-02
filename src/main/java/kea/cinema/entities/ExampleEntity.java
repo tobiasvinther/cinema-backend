@@ -1,4 +1,4 @@
-package kea.exam.entities;
+package kea.cinema.entities;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;

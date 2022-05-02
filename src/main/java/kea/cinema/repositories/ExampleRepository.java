@@ -1,6 +1,6 @@
-package kea.exam.repositories;
+package kea.cinema.repositories;
 
-import kea.exam.entities.ExampleEntity;
+import kea.cinema.entities.ExampleEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 //change this to use a "real" entity

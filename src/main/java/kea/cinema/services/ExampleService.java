@@ -1,4 +1,4 @@
-package kea.exam.services;
+package kea.cinema.services;
 
 import org.springframework.stereotype.Service;
 

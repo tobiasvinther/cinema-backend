@@ -1,8 +1,6 @@
-package kea.exam.repositories;
+package kea.cinema.repositories;
 
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 //change to test real class
 

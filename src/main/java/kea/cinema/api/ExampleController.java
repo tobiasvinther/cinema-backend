@@ -1,4 +1,4 @@
-package kea.exam.api;
+package kea.cinema.api;
 
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;

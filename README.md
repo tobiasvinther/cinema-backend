@@ -33,4 +33,10 @@ Thony Dyreborg-Kragh(https://github.com/ThonyDK)
 Jonatan Segal(https://github.com/JonatanSegal)
 
 ### Minisprint 1
-TODO
+- Create class diagram
+- Movie entity
+- Movie repository
+- Movie DTOs
+- MovieController/API
+- Create TestData class
+- Get frontend to fetch a list of movies

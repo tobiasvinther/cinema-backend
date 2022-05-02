@@ -16,7 +16,8 @@ Feature branching.
 https://github.com/tobiasvinther/cinema-frontend
 
 ## Link to deployed project
-TODO
+Frontend: https://calm-pond-08a41c203.1.azurestaticapps.net/#/
+Backend: https://cinema-sem3-backend.azurewebsites.net
 
 ## Who Did What
 TODO

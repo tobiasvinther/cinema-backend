@@ -1,4 +1,5 @@
 ﻿# Gruppe 1
+ [![Build and deploy JAR app to Azure Web App - Cinema-sem3-backend](https://github.com/tobiasvinther/cinema-backend/actions/workflows/main_cinema-sem3-backend.yml/badge.svg)](https://github.com/tobiasvinther/cinema-backend/actions/workflows/main_cinema-sem3-backend.yml)
 
 ## Project Description
 Cinema

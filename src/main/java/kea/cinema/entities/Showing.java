@@ -1,10 +1,12 @@
 package kea.cinema.entities;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.*;
+import java.time.LocalDate;
 import java.time.LocalTime;
 import java.util.Date;
 
@@ -12,13 +14,14 @@ import java.util.Date;
 @Getter
 @Setter
 @NoArgsConstructor
+@AllArgsConstructor
 public class Showing {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
-    private Date date;
+    private LocalDate date;
 
     private LocalTime time;
 

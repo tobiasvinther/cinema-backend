@@ -3,7 +3,7 @@ package kea.cinema.api;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 
-class ExampleControllerTest {
+class MovieControllerTest {
 
     @BeforeEach
     void setUp() {

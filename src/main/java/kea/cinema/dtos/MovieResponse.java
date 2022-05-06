@@ -15,7 +15,7 @@ import java.util.stream.Collectors;
 @Setter
 @NoArgsConstructor
 public class MovieResponse {
-    Mapper mapper;
+
     private String name;
     private String posterLink;
     private List<ShowingResponse> showings;

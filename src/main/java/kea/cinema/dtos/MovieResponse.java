@@ -19,11 +19,13 @@ public class MovieResponse {
     private String name;
     private String posterLink;
     private List<ShowingResponse> showings;
+
     public MovieResponse(Movie movie, boolean includeAll){
         this.name = movie.getName();
         this.posterLink = movie.getPosterLink();
         this.showings = ShowingResponse.ShowingFromEntity(movie.getShowings());
     }
+
     public static List<MovieResponse> MovieFromEntity(List<Movie> movies){
         return movies.stream().map(movie -> new MovieResponse(movie,false)).collect(Collectors.toList());
     }

@@ -1,7 +1,9 @@
 package kea.cinema.api;
 
+import kea.cinema.dtos.MovieResponse;
 import kea.cinema.entities.Movie;
 import kea.cinema.repositories.MovieRepository;
+import kea.cinema.services.MovieService;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -12,20 +14,17 @@ import java.util.List;
 @RequestMapping("api/movies") //change this to something relevant
 public class MovieController {
 
-    //private MovieService movieService;
-    //private ShowingService showingService;
-    MovieRepository movieRepository;
+    MovieService movieService;
+    //MovieRepository movieRepository;
 
-    public MovieController(MovieRepository movieRepository) {
-        this.movieRepository = movieRepository;
+    public MovieController(MovieService movieService) {
+        this.movieService = movieService;
     }
 
     //get all movies
     @GetMapping()
-    public List<Movie> getMovies() {
-        List<Movie> movieList = movieRepository.findAll();
-        System.out.println("Liste: " + movieList);
-        return movieList;
+    public List<MovieResponse> getMovies() {
+        return movieService.getAllMovies();
     }
 
     /*

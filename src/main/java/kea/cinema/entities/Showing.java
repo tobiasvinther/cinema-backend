@@ -29,4 +29,8 @@ public class Showing {
     @ManyToOne
     private Movie movie;
 
+    //Mange showings til en hall
+    @ManyToOne
+    private Hall hall;
+
 }

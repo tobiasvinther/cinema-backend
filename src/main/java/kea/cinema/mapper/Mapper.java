@@ -9,6 +9,7 @@ public class Mapper {
 
     public MovieResponse toMovieResponse(Movie movie){
         MovieResponse movieResponse = new MovieResponse();
+        movieResponse.setId(movie.getId());
         movieResponse.setName(movie.getName());
         movieResponse.setPosterLink(movie.getPosterLink());
         return movieResponse;
@@ -16,6 +17,7 @@ public class Mapper {
 
     public ShowingResponse toShowingResponse(Showing showing){
         ShowingResponse showingResponse = new ShowingResponse();
+        showingResponse.setId(showing.getId());
         showingResponse.setDate(showing.getDate());
         showingResponse.setTime(showing.getTime());
         return showingResponse;

@@ -16,11 +16,13 @@ import java.util.stream.Collectors;
 @NoArgsConstructor
 public class MovieResponse {
 
+    private int id;
     private String name;
     private String posterLink;
     private List<ShowingResponse> showings;
 
     public MovieResponse(Movie movie, boolean includeAll){
+        this.id = movie.getId();
         this.name = movie.getName();
         this.posterLink = movie.getPosterLink();
         this.showings = ShowingResponse.ShowingFromEntity(movie.getShowings());

@@ -1,7 +1,6 @@
 package kea.cinema.dtos;
 
-import kea.cinema.entities.Movie;
-import kea.cinema.entities.Showing;
+import kea.cinema.entities.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -16,10 +15,12 @@ import java.util.stream.Collectors;
 @Setter
 @NoArgsConstructor
 public class ShowingResponse {
+    private int id;
     private LocalDate date;
     private LocalTime time;
 
     public ShowingResponse (Showing showing, boolean includeAll){
+        this.id = showing.getId();
         this.date = showing.getDate();
         this.time = showing.getTime();
     }

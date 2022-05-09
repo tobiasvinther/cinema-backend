@@ -25,7 +25,7 @@ public class CreateTestData implements ApplicationRunner {
     }
 
     public void createMoviesAndShowings() {
-        Movie movie1 = new Movie(1, "Fantastic Beasts: The Secrest of Dumbledore", "https://media-cache.cinematerial.com/p/500x/w8fx9gym/fantastic-beasts-the-secrets-of-dumbledore-movie-poster.jpg?v=1649286978");
+        Movie movie1 = new Movie(1, "Fantastic Beasts: The Secrets of Dumbledore", "https://media-cache.cinematerial.com/p/500x/w8fx9gym/fantastic-beasts-the-secrets-of-dumbledore-movie-poster.jpg?v=1649286978");
         Movie movie2 = new Movie(2, "Sonic the Hedgehog 2", "https://media-cache.cinematerial.com/p/500x/wbv80d0r/sonic-the-hedgehog-2-movie-poster.jpg?v=1645121606");
         movieRepository.save(movie1);
         movieRepository.save(movie2);

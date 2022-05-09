@@ -21,12 +21,16 @@ public class Hall {
     private int id;
 
     //A hall has many rows
-   @ManyToOne
-   @JoinColumn(name = "line_ID")
-   private Line line;
+   @OneToMany (mappedBy = "hall", fetch = FetchType.EAGER)
+   private Set<Line> lines = new HashSet<>();
 
    //A hall can have many showings
    @OneToMany(mappedBy = "hall", fetch = FetchType.EAGER)
    private Set<Showing> showings = new HashSet<>();
 
+    public Hall(int id, Set<Line> lines, Set<Showing> showings) {
+        this.id = id;
+        this.lines = lines;
+        this.showings = showings;
+    }
 }

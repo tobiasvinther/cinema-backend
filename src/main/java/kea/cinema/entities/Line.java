@@ -22,13 +22,12 @@ public class Line {
     private char rowName;
 
     //A rows ID can be used in many halls
-    @OneToMany(mappedBy = "lines", fetch = FetchType.EAGER)
-    private Set<Hall> lines = new HashSet<>();
+    @ManyToOne
+    private Hall hall;
 
     //A row have many seats
-    @ManyToOne
-    @JoinColumn(name = "seat_ID")
-    private Seat seats;
+    @OneToMany(mappedBy = "line", fetch = FetchType.EAGER)
+    private Set<Seat> seats = new HashSet<>();;
 
     public Line(char rowName){
         this.rowName = rowName;

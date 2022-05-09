@@ -20,8 +20,8 @@ public class Seat {
     private int id;
 
     //Seats number repeats for every row of seats
-    @OneToMany(mappedBy = "seats", fetch = FetchType.EAGER)
-    private Set<Line> seats = new HashSet<>();
+    @ManyToOne
+    private Line line;
 
     public Seat(int id) {
         this.id = id;

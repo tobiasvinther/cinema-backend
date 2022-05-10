@@ -15,7 +15,6 @@ import java.util.List;
 public class MovieController {
 
     MovieService movieService;
-    //MovieRepository movieRepository;
 
     public MovieController(MovieService movieService) {
         this.movieService = movieService;
@@ -27,7 +26,12 @@ public class MovieController {
         return movieService.getAllMovies();
     }
 
-    /*
+     /*
+    @PostMapping
+    public void orderTickets(@RequestBody ) {
+        showingService.orderTickets(showingId, ticketAmount);
+    }
+
     //get a specific movie by id
     @GetMapping("/{id}")
     public Movie getMovie(@PathVariable int id) {

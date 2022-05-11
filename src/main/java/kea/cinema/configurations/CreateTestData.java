@@ -33,10 +33,13 @@ public class CreateTestData implements ApplicationRunner {
         movieRepository.save(movie3);
 
 
-        Showing showing1 = new Showing(1, LocalDate.of(2022, 5, 4), LocalTime.of(10, 0), movie1);
-        Showing showing2 = new Showing(2, LocalDate.of(2022, 5, 4), LocalTime.of(12, 0), movie1);
+        Showing showing1 = new Showing(1, LocalDate.of(2022, 5, 9), LocalTime.of(10, 0), movie1);
+        Showing showing9 = new Showing(9, LocalDate.of(2022, 5, 11), LocalTime.of(10, 0), movie1);
+        Showing showing10 = new Showing(10, LocalDate.of(2022, 5, 13), LocalTime.of(10, 0), movie1);
+        Showing showing2 = new Showing(2, LocalDate.of(2022, 5, 4), LocalTime.of(12, 45), movie1);
         showingRepository.save(showing1);
         showingRepository.save(showing2);
+
 
         Showing showing3 = new Showing(3, LocalDate.of(2022, 5, 9), LocalTime.of(10, 0), movie2);
         Showing showing4 = new Showing(4, LocalDate.of(2022, 5, 9), LocalTime.of(12, 45), movie2);
@@ -50,6 +53,8 @@ public class CreateTestData implements ApplicationRunner {
         showingRepository.save(showing6);
         showingRepository.save(showing7);
         showingRepository.save(showing8);
+        showingRepository.save(showing9);
+        showingRepository.save(showing10);
     }
 
     @Override

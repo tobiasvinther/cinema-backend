@@ -33,7 +33,7 @@ public class Showing {
     @ManyToOne
     private Hall hall;
 
-    int ticketsLeft = 10 * 20; //let's pretend there's 10 rows with 20 seats each
+    private int ticketsLeft = 10 * 20; //let's pretend there's 10 rows with 20 seats each
 
     public Showing(int id, LocalDate date, LocalTime time, Movie movie) {
         this.id = id;

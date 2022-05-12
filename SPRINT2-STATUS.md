@@ -20,10 +20,13 @@
 
 ## Who did what
 Jonatan:
-- todo
+- Showing DTO
+- Hall, line (row), and seat entities
+- Hall, line (row), and seat repositories
+- Work on front page
 
 Thony:
-- todo
+- Order tickets page
 
 Tobias:
 - Showing service

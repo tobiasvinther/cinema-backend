@@ -27,6 +27,8 @@ Jonatan:
 
 Thony:
 - Order tickets page
+- Showing service
+- Showing controller
 
 Tobias:
 - Showing service
@@ -37,4 +39,7 @@ Tobias:
 - Application settings on Azure
 
 ## What is our plan for sprint 3
-- todo
+- Finish front page
+- Finish order page
+- Finish weekly screening program table
+- Fixes and final touches

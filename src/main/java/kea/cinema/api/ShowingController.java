@@ -1,10 +1,8 @@
 package kea.cinema.api;
 
+import kea.cinema.dtos.ShowingResponse;
 import kea.cinema.services.ShowingService;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.PatchMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @CrossOrigin
 @RestController
@@ -21,4 +19,8 @@ public class ShowingController {
         showingService.subtractTickets(id, ticketAmount);
     }
 
+    @GetMapping("api/order-tickets/{id}")
+    public ShowingResponse getShowing(@PathVariable int id) throws Exception {
+        return showingService.getShowingById(id);
+    }
 }

@@ -18,11 +18,13 @@ public class ShowingResponse {
     private int id;
     private LocalDate date;
     private LocalTime time;
+    private String movieTitle;
 
     public ShowingResponse (Showing showing, boolean includeAll){
         this.id = showing.getId();
         this.date = showing.getDate();
         this.time = showing.getTime();
+        this.movieTitle = showing.getMovie().getName();
     }
 
     public static List<ShowingResponse> ShowingFromEntity(Set<Showing> showings){

@@ -4,6 +4,7 @@ import kea.cinema.dtos.ShowingResponse;
 import kea.cinema.services.ShowingService;
 import org.springframework.web.bind.annotation.*;
 
+//@CrossOrigin(origins = "*")
 @CrossOrigin
 @RestController
 public class ShowingController {

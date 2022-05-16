@@ -1,5 +1,6 @@
 package kea.cinema.services;
 
+import kea.cinema.dtos.ShowingResponse;
 import kea.cinema.entities.Showing;
 import kea.cinema.repositories.ShowingRepository;
 import org.springframework.stereotype.Service;
@@ -23,4 +24,10 @@ public class ShowingService {
         }
 
     }
+
+    public ShowingResponse getShowingById(int id) throws Exception {
+        Showing showing = showingRepository.findById(id).orElseThrow(()-> new Exception("No showing with provided ID found"));
+        return new ShowingResponse(showing, false);
+    }
+
 }

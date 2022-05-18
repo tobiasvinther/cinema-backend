@@ -42,4 +42,11 @@ public class Showing {
         this.movie = movie;
         this.ticketsLeft = getTicketsLeft();
     }
+
+    public Showing(LocalDate date, LocalTime time, Movie movie) {
+        this.date = date;
+        this.time = time;
+        this.movie = movie;
+        this.ticketsLeft = getTicketsLeft();
+    }
 }
